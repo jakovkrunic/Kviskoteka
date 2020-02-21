@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asocijacije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asocijacije.Designer.cs">
+      <DependentUpon>Asocijacije.cs</DependentUpon>
+    </Compile>
     <Compile Include="FileManager.cs" />
     <Compile Include="Dodavanje.cs">
       <SubType>Form</SubType>
@@ -67,6 +73,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Asocijacije.resx">
+      <DependentUpon>Asocijacije.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dodavanje.resx">
       <DependentUpon>Dodavanje.cs</DependentUpon>
     </EmbeddedResource>

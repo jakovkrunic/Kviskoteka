@@ -1,0 +1,12 @@
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\bin\Debug\Kviskoteka.exe.config
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\bin\Debug\Kviskoteka.exe
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\bin\Debug\Kviskoteka.pdb
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.csprojAssemblyReference.cache
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.Dodavanje.resources
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.Login.resources
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.Pocetna.resources
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.Properties.Resources.resources
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.csproj.GenerateResource.cache
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.exe
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.pdb
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.Asocijacije.resources
