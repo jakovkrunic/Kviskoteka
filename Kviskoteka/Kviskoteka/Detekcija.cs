@@ -53,7 +53,9 @@ namespace Kviskoteka
         {
             InitializeComponent();
 
-
+            //razina1 = DetaljiIgre.TezinaPrvog(2);
+            //razina2 = DetaljiIgre.TezinaDrugog(2);
+            
             poredakIgraca = numbers.OrderBy(x => rnd.Next()).ToArray();
 
             //OBLIKOVANJE
@@ -569,6 +571,8 @@ namespace Kviskoteka
                 if (bodovi2 == 50) izlaz += "Igrač 2 je također pogodio osobu i osvojio 50 bodova. ";
                 else izlaz += "Igrač 2 nije pogodio osobu pa nije osvojio bodove.";
 
+                DetaljiIgre.DodajBodove(bodoviKorisnik, bodovi1, bodovi2);
+
                 MessageBox.Show(izlaz);
             }
 
@@ -603,7 +607,7 @@ namespace Kviskoteka
                 else izlaz += "Igrač 1 nije pogodio osobu pa nije osvojio bodove. ";
                 if (bodovi2 == 50) izlaz += "Igrač 2 je također pogodio osobu i osvojio 50 bodova. ";
                 else izlaz += "Igrač 2 nije pogodio osobu pa nije osvojio bodove.";
-
+                DetaljiIgre.DodajBodove(bodoviKorisnik, bodovi1, bodovi2);
                 MessageBox.Show(izlaz);
             }
         }
@@ -655,7 +659,7 @@ namespace Kviskoteka
                 else izlaz += "Igrač 1 nije pogodio osobu pa nije osvojio bodove. ";
                 if (bodovi2 == 50) izlaz += "Igrač 2 je također pogodio osobu i osvojio 50 bodova. ";
                 else izlaz += "Igrač 2 nije pogodio osobu pa nije osvojio bodove. ";
-
+                DetaljiIgre.DodajBodove(bodoviKorisnik, bodovi1, bodovi2);
                 MessageBox.Show(izlaz);
             }
         }
@@ -664,6 +668,8 @@ namespace Kviskoteka
         {
             glasajPrije.Visible = false;
             odabirRjesenja = 1;
+            kojuOsobuPita.Text = "";
+            odgovorOsobe.Text = "Izaberite osobu za koju mislite da je točna.";
             timer1.Stop();
             timer1.Tick -= new EventHandler(timer1_TickZaProgressBar);
         }

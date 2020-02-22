@@ -59,6 +59,12 @@
     <Compile Include="Detekcija.Designer.cs">
       <DependentUpon>Detekcija.cs</DependentUpon>
     </Compile>
+    <Compile Include="DodajDetekciju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajDetekciju.Designer.cs">
+      <DependentUpon>DodajDetekciju.cs</DependentUpon>
+    </Compile>
     <Compile Include="FileManager.cs" />
     <Compile Include="Dodavanje.cs">
       <SubType>Form</SubType>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Detekcija.resx">
       <DependentUpon>Detekcija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajDetekciju.resx">
+      <DependentUpon>DodajDetekciju.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dodavanje.resx">
       <DependentUpon>Dodavanje.cs</DependentUpon>
