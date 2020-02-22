@@ -571,7 +571,7 @@ namespace Kviskoteka
                 if (bodovi2 == 50) izlaz += "Igrač 2 je također pogodio osobu i osvojio 50 bodova. ";
                 else izlaz += "Igrač 2 nije pogodio osobu pa nije osvojio bodove.";
 
-                DetaljiIgre.DodajBodove(bodoviKorisnik, bodovi1, bodovi2);
+                DetaljiIgre.DodajBodove(this, bodoviKorisnik, bodovi1, bodovi2);
 
                 MessageBox.Show(izlaz);
             }
@@ -607,7 +607,7 @@ namespace Kviskoteka
                 else izlaz += "Igrač 1 nije pogodio osobu pa nije osvojio bodove. ";
                 if (bodovi2 == 50) izlaz += "Igrač 2 je također pogodio osobu i osvojio 50 bodova. ";
                 else izlaz += "Igrač 2 nije pogodio osobu pa nije osvojio bodove.";
-                DetaljiIgre.DodajBodove(bodoviKorisnik, bodovi1, bodovi2);
+                DetaljiIgre.DodajBodove(this, bodoviKorisnik, bodovi1, bodovi2);
                 MessageBox.Show(izlaz);
             }
         }
@@ -659,7 +659,7 @@ namespace Kviskoteka
                 else izlaz += "Igrač 1 nije pogodio osobu pa nije osvojio bodove. ";
                 if (bodovi2 == 50) izlaz += "Igrač 2 je također pogodio osobu i osvojio 50 bodova. ";
                 else izlaz += "Igrač 2 nije pogodio osobu pa nije osvojio bodove. ";
-                DetaljiIgre.DodajBodove(bodoviKorisnik, bodovi1, bodovi2);
+                DetaljiIgre.DodajBodove(this, bodoviKorisnik, bodovi1, bodovi2);
                 MessageBox.Show(izlaz);
             }
         }
