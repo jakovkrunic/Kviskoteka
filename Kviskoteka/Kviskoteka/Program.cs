@@ -16,7 +16,7 @@ namespace Kviskoteka
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Asocijacije()); //zbog testiranja
+            Application.Run(new Detekcija()); //zbog testiranja
         }
     }
 }

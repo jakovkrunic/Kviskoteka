@@ -28,5 +28,28 @@ namespace Kviskoteka
 
             return izlaz;
         }
+
+        public String[] detekcija()
+        {
+            int lineCount = File.ReadLines(@"potrebno/detekcije.txt").Count();
+            int broj_igri = lineCount / 42;
+            Random rnd = new Random();
+            int igra = rnd.Next(broj_igri);
+            String[] izlaz = new String[42];
+
+            int brojac = 0;
+            int interni = 0;
+            string line;
+
+            TextReader file = new StreamReader(@"potrebno/detekcije.txt", System.Text.Encoding.Default, true);
+
+            while ((line = file.ReadLine()) != null)
+            {
+                if (brojac < igra * 42) { ++brojac; continue; }
+                if (interni < 42) { izlaz[interni] = line; ++interni; }
+            }
+
+            return izlaz;
+        }
     }
 }
