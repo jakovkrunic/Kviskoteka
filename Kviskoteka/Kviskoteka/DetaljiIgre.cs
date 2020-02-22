@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Kviskoteka
 {
@@ -67,8 +68,10 @@ namespace Kviskoteka
             return bodovi_drugog;
         }
 
-        public static void DodajBodove(int igrac, int prvi, int drugi)
+        public static void DodajBodove(Form form, int igrac, int prvi, int drugi)
         {
+            form.Close();
+
             bodovi_igraca += igrac;
             bodovi_prvog += prvi;
             bodovi_drugog += drugi;
@@ -104,7 +107,9 @@ namespace Kviskoteka
             neiskoristen_kvisko_drugi = false;
 
             tezina_prvog = new int[4];
+            for (int i = 0; i < 4; ++i) tezina_prvog[i] = 1;
             tezina_drugog = new int[4];
+            for (int i = 0; i < 4; ++i) tezina_drugog[i] = 1;
 
             faza = 0;
         }

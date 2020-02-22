@@ -13,6 +13,7 @@ namespace Kviskoteka
 {
     public partial class Pocetna : Form
     {
+        private bool ulogiran = false;
         public Pocetna()
         {
             InitializeComponent();
@@ -24,30 +25,48 @@ namespace Kviskoteka
 
         }
 
-        private void dodaj_btn_Click(object sender, EventArgs e)
+        private bool logiraj()
         {
+            bool proslo = false;
             Login login = new Login();
-            if (login.ShowDialog() == DialogResult.OK) { 
+            if (login.ShowDialog() == DialogResult.OK)
+            {
                 if (login.user_text.Text == "admin" && login.pass_text.Text == "admin")
                 {
-                    new Dodavanje().Show();
+                    proslo = true;
                 }
                 else
                 {
-                    MessageBox.Show("Krivi user i/ili pass!");
+                    MessageBox.Show("Krivi username i/ili password!");
                 }
             }
 
             login.Dispose();
+
+            return proslo;
         }
 
-        private void provjeri_btn_Click(object sender, EventArgs e)
+        private void dodaj_btn_Click(object sender, EventArgs e)
         {
-            String[] asocijacija = new FileManager().asocijacija();
-            foreach (string s in asocijacija)
+            bool proslo = false;
+            if (ulogiran == false) { proslo = logiraj(); }
+            if (!proslo && !ulogiran)
             {
-                Console.WriteLine(s);
+                return;
             }
+
+            ulogiran = true;
+            Dodavanje dodavanje = new Dodavanje();
+
+            if (dodavanje.ShowDialog() == DialogResult.OK)
+            {
+                if (dodavanje.abc_radio.Checked) new DodajABC().Show();
+                if (dodavanje.as_radio.Checked) new DodajAsocijaciju().Show();
+                if (dodavanje.det_radio.Checked) new DodajDetekciju().Show();
+                if (dodavanje.zav_radio.Checked) new DodajZavrsnu().Show();
+            }
+
+            dodavanje.Dispose();
         }
 
         private void postavke_btn_Click(object sender, EventArgs e)

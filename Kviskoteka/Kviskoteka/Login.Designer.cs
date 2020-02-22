@@ -122,8 +122,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox user_text;
-        public System.Windows.Forms.TextBox pass_text;
+        internal System.Windows.Forms.TextBox user_text;
+        internal System.Windows.Forms.TextBox pass_text;
         private System.Windows.Forms.Button login_btn;
         private System.Windows.Forms.Button odustani_btn;
     }

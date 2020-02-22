@@ -32,7 +32,6 @@
             this.kreni_btn = new System.Windows.Forms.Button();
             this.postavke_btn = new System.Windows.Forms.Button();
             this.dodaj_btn = new System.Windows.Forms.Button();
-            this.provjeri_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -65,7 +64,7 @@
             // 
             // dodaj_btn
             // 
-            this.dodaj_btn.Location = new System.Drawing.Point(261, 43);
+            this.dodaj_btn.Location = new System.Drawing.Point(235, 43);
             this.dodaj_btn.Name = "dodaj_btn";
             this.dodaj_btn.Size = new System.Drawing.Size(89, 23);
             this.dodaj_btn.TabIndex = 3;
@@ -73,22 +72,11 @@
             this.dodaj_btn.UseVisualStyleBackColor = true;
             this.dodaj_btn.Click += new System.EventHandler(this.dodaj_btn_Click);
             // 
-            // provjeri_btn
-            // 
-            this.provjeri_btn.Location = new System.Drawing.Point(16, 98);
-            this.provjeri_btn.Name = "provjeri_btn";
-            this.provjeri_btn.Size = new System.Drawing.Size(176, 23);
-            this.provjeri_btn.TabIndex = 4;
-            this.provjeri_btn.Text = "Provjeri dodavanje!";
-            this.provjeri_btn.UseVisualStyleBackColor = true;
-            this.provjeri_btn.Click += new System.EventHandler(this.provjeri_btn_Click);
-            // 
             // Pocetna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.provjeri_btn);
             this.Controls.Add(this.dodaj_btn);
             this.Controls.Add(this.postavke_btn);
             this.Controls.Add(this.kreni_btn);
@@ -107,7 +95,6 @@
         private System.Windows.Forms.Button kreni_btn;
         private System.Windows.Forms.Button postavke_btn;
         private System.Windows.Forms.Button dodaj_btn;
-        private System.Windows.Forms.Button provjeri_btn;
     }
 }
 

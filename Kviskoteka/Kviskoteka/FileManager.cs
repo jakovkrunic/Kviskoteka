@@ -13,10 +13,10 @@ namespace Kviskoteka
         public String[] abcPitalica()
         {
             int lineCount = File.ReadLines(@"potrebno/abc.txt").Count();
-            int broj_pitanja = lineCount / 4;
+            int broj_pitanja = lineCount / 5;
             Random rnd = new Random();
             List<int> iskoristeno = new List<int>();
-            String[] izlaz = new String[40];
+            String[] izlaz = new String[50];
 
             for (int i = 0; i < 10; ++i)
             {
@@ -35,10 +35,10 @@ namespace Kviskoteka
 
                 TextReader file = new StreamReader(@"potrebno/abc.txt", System.Text.Encoding.Default, true);
 
-                while ((line = file.ReadLine()) != null && interni < 4)
+                while ((line = file.ReadLine()) != null && interni < 5)
                 {
-                    if (brojac < pitanje * 4) { ++brojac; continue; }
-                    if (interni < 4) { izlaz[interni] = line; ++interni; }
+                    if (brojac < pitanje * 5) { ++brojac; continue; }
+                    if (interni < 5) { izlaz[interni] = line; ++interni; }
                 }
 
             }
