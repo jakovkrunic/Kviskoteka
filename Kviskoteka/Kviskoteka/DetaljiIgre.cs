@@ -23,6 +23,8 @@ namespace Kviskoteka
         private static bool neiskoristen_kvisko_prvi;
         private static bool neiskoristen_kvisko_drugi;
 
+        private static int faza;
+
         /*
          * IGRA: 
          * 0 - ABC pitalica
@@ -103,6 +105,8 @@ namespace Kviskoteka
 
             tezina_prvog = new int[4];
             tezina_drugog = new int[4];
+
+            faza = 0;
         }
     }
 }
