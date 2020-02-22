@@ -49,6 +49,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Red = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -234,7 +235,7 @@
             this.textBox1.Size = new System.Drawing.Size(125, 20);
             this.textBox1.TabIndex = 16;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckKeys);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckKeys);
             // 
             // textBox2
             // 
@@ -243,7 +244,7 @@
             this.textBox2.Size = new System.Drawing.Size(125, 20);
             this.textBox2.TabIndex = 17;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckKeys);
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckKeys);
             // 
             // textBox3
             // 
@@ -252,7 +253,7 @@
             this.textBox3.Size = new System.Drawing.Size(125, 20);
             this.textBox3.TabIndex = 18;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckKeys);
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckKeys);
             // 
             // textBox4
             // 
@@ -261,7 +262,7 @@
             this.textBox4.Size = new System.Drawing.Size(125, 20);
             this.textBox4.TabIndex = 19;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckKeys);
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckKeys);
             // 
             // textBox5
             // 
@@ -270,13 +271,23 @@
             this.textBox5.Size = new System.Drawing.Size(410, 20);
             this.textBox5.TabIndex = 20;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckKeys);
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckKeys);
+            // 
+            // Red
+            // 
+            this.Red.AutoSize = true;
+            this.Red.Location = new System.Drawing.Point(12, 290);
+            this.Red.Name = "Red";
+            this.Red.Size = new System.Drawing.Size(75, 13);
+            this.Red.TabIndex = 21;
+            this.Red.Text = "Vi ste na redu!";
             // 
             // Asocijacije
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(552, 322);
+            this.Controls.Add(this.Red);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -329,5 +340,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label Red;
     }
 }
