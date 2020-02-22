@@ -30,3 +30,4 @@ C:\Users\Petra\source\repos\Kviskoteka\Kviskoteka\Kviskoteka\bin\Debug\potrebno\
 C:\Users\Petra\source\repos\Kviskoteka\Kviskoteka\Kviskoteka\bin\Debug\potrebno\musko.png
 C:\Users\Petra\source\repos\Kviskoteka\Kviskoteka\Kviskoteka\bin\Debug\potrebno\zensko.jpg
 C:\Users\Petra\source\repos\Kviskoteka\Kviskoteka\Kviskoteka\bin\Debug\potrebno\zensko.png
+C:\Users\Petra\source\repos\Kviskoteka\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.DodajDetekciju.resources
