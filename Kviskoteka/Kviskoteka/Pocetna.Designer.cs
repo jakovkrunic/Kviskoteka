@@ -61,6 +61,7 @@
             this.postavke_btn.TabIndex = 2;
             this.postavke_btn.Text = "Postavke";
             this.postavke_btn.UseVisualStyleBackColor = true;
+            this.postavke_btn.Click += new System.EventHandler(this.postavke_btn_Click);
             // 
             // dodaj_btn
             // 
