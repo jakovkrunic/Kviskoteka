@@ -28,6 +28,9 @@ namespace Kviskoteka
 
         public static Pocetna pocetna;
 
+        private static int prvi_kvisko;
+        private static int drugi_kvisko;
+
         /*
          * IGRA: 
          * 0 - ABC pitalica
@@ -74,6 +77,10 @@ namespace Kviskoteka
         {
             form.Close();
 
+            iskoristen_kvisko_igrac = false;
+            iskoristen_kvisko_prvi = false;
+            iskoristen_kvisko_drugi = false;
+
             bodovi_igraca += igrac;
             bodovi_prvog += prvi;
             bodovi_drugog += drugi;
@@ -83,9 +90,30 @@ namespace Kviskoteka
                 if (bodovi_igraca >= 70) neiskoristen_kvisko_igrac = true;
                 if (bodovi_prvog >= 70) neiskoristen_kvisko_prvi = true;
                 if (bodovi_drugog >= 70) neiskoristen_kvisko_drugi = true;
+
+                if (neiskoristen_kvisko_prvi)
+                {
+                    Random rnd = new Random();
+                    int random = rnd.Next(tezina_prvog[1] + tezina_prvog[2] + tezina_prvog[3]);
+                    if (random < tezina_prvog[1]) prvi_kvisko = 1;
+                    else if (random < tezina_prvog[1] + tezina_prvog[2]) prvi_kvisko = 2;
+                    else prvi_kvisko = 3;
+                }
+
+                if (neiskoristen_kvisko_drugi)
+                {
+                    Random rnd = new Random();
+                    int random = rnd.Next(tezina_drugog[1] + tezina_drugog[2] + tezina_drugog[3]);
+                    if (random < tezina_drugog[1]) drugi_kvisko = 1;
+                    else if (random < tezina_drugog[1] + tezina_drugog[2]) drugi_kvisko = 2;
+                    else drugi_kvisko = 3;
+                }
             }
 
             ++faza;
+
+            if (faza == prvi_kvisko) IskoristiKviskoPrvi();
+            if (faza == drugi_kvisko) IskoristiKviskoDrugi();
 
             new Bodovi(neiskoristen_kvisko_igrac).Show();
         }
@@ -149,6 +177,9 @@ namespace Kviskoteka
             for (int i = 0; i < 4; ++i) tezina_drugog[i] = 1;
 
             faza = 0;
+
+            prvi_kvisko = -1;
+            drugi_kvisko = -1;
         }
     }
 }
