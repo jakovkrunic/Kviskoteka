@@ -158,6 +158,9 @@ namespace Kviskoteka
                         bodovi1 += 40;
                         //kraj igre
                         MessageBox.Show("Kraj igre asocijacija!");
+                        if (DetaljiIgre.IskoristenKviskoIgrac()) bodovi1 *= 2;
+                        if (DetaljiIgre.IskoristenKviskoPrvi()) bodovi2 *= 2;
+                        if (DetaljiIgre.IskoristenKviskoDrugi()) bodovi3 *= 2;
                         DetaljiIgre.DodajBodove(this, bodovi1, bodovi2, bodovi3);
                     }
                     else
@@ -348,6 +351,9 @@ namespace Kviskoteka
                     bodovi3 += 40;
                 //kraj igre
                 MessageBox.Show("Kraj igre asocijacija!");
+                if (DetaljiIgre.IskoristenKviskoIgrac()) bodovi1 *= 2;
+                if (DetaljiIgre.IskoristenKviskoPrvi()) bodovi2 *= 2;
+                if (DetaljiIgre.IskoristenKviskoDrugi()) bodovi3 *= 2;
                 DetaljiIgre.DodajBodove(this, bodovi1, bodovi2, bodovi3);
             }
             else
