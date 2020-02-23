@@ -58,6 +58,12 @@
     <Compile Include="Asocijacije.Designer.cs">
       <DependentUpon>Asocijacije.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bodovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bodovi.Designer.cs">
+      <DependentUpon>Bodovi.cs</DependentUpon>
+    </Compile>
     <Compile Include="DetaljiIgre.cs" />
     <Compile Include="Detekcija.cs">
       <SubType>Form</SubType>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Asocijacije.resx">
       <DependentUpon>Asocijacije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bodovi.resx">
+      <DependentUpon>Bodovi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Detekcija.resx">
       <DependentUpon>Detekcija.cs</DependentUpon>

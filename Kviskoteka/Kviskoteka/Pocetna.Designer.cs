@@ -51,6 +51,7 @@
             this.kreni_btn.TabIndex = 1;
             this.kreni_btn.Text = "Kreni!";
             this.kreni_btn.UseVisualStyleBackColor = true;
+            this.kreni_btn.Click += new System.EventHandler(this.kreni_btn_Click);
             // 
             // postavke_btn
             // 

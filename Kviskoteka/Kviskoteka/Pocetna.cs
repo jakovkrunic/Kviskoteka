@@ -17,7 +17,7 @@ namespace Kviskoteka
         public Pocetna()
         {
             InitializeComponent();
-            DetaljiIgre.reset();
+            DetaljiIgre.reset(this);
         }
 
         private void Pocetna_Load(object sender, EventArgs e)
@@ -95,6 +95,13 @@ namespace Kviskoteka
                 DetaljiIgre.tezinaDrugog(drugi_zav, 3);
             }
             dialog_setting.Dispose();
+        }
+
+        private void kreni_btn_Click(object sender, EventArgs e)
+        {
+            new ABC().Show();
+
+            this.Hide();
         }
     }
 }

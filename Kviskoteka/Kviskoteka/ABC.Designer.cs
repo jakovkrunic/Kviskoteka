@@ -129,7 +129,7 @@
             this.groupBox2.Controls.Add(this.odgovor1_label);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox2.Location = new System.Drawing.Point(372, 13);
+            this.groupBox2.Location = new System.Drawing.Point(523, 11);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
@@ -181,7 +181,7 @@
             this.groupBox3.Controls.Add(this.odgovor2_label);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox3.Location = new System.Drawing.Point(372, 141);
+            this.groupBox3.Location = new System.Drawing.Point(523, 136);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
@@ -256,7 +256,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 241);
+            this.ClientSize = new System.Drawing.Size(784, 241);
             this.Controls.Add(this.bodovi_label);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.progressBar1);
@@ -267,6 +267,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ABC";
             this.Text = "ABC";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ABC_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

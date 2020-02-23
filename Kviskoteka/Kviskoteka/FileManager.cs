@@ -38,7 +38,7 @@ namespace Kviskoteka
                 while ((line = file.ReadLine()) != null && interni < 5)
                 {
                     if (brojac < pitanje * 5) { ++brojac; continue; }
-                    if (interni < 5) { izlaz[interni] = line; ++interni; }
+                    else if (interni < 5) { izlaz[5 * i + interni] = line; ++interni; }
                 }
 
             }
@@ -122,7 +122,7 @@ namespace Kviskoteka
                 while ((line = file.ReadLine()) != null && interni < 5)
                 {
                     if (brojac < pitanje * 5) { ++brojac; continue; }
-                    if (interni < 5) { izlaz[interni] = line; ++interni; }
+                    if (interni < 5) { izlaz[5 * i + interni] = line; ++interni; }
                 }
 
             }

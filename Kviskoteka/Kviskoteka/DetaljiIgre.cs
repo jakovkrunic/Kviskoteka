@@ -26,6 +26,8 @@ namespace Kviskoteka
 
         private static int faza;
 
+        public static Pocetna pocetna;
+
         /*
          * IGRA: 
          * 0 - ABC pitalica
@@ -75,6 +77,17 @@ namespace Kviskoteka
             bodovi_igraca += igrac;
             bodovi_prvog += prvi;
             bodovi_drugog += drugi;
+
+            if (faza == 0)
+            {
+                if (bodovi_igraca >= 70) neiskoristen_kvisko_igrac = true;
+                if (bodovi_prvog >= 70) neiskoristen_kvisko_prvi = true;
+                if (bodovi_drugog >= 70) neiskoristen_kvisko_drugi = true;
+            }
+
+            ++faza;
+
+            new Bodovi(neiskoristen_kvisko_igrac).Show();
         }
 
         public static bool IskoristenKviskoIgrac()
@@ -92,8 +105,32 @@ namespace Kviskoteka
             return iskoristen_kvisko_drugi;
         }
 
-        public static void reset()
+        public static void IskoristiKviskoIgrac()
         {
+            neiskoristen_kvisko_igrac = false;
+            iskoristen_kvisko_igrac = true;
+        }
+
+        public static void IskoristiKviskoPrvi()
+        {
+            neiskoristen_kvisko_prvi = false;
+            iskoristen_kvisko_prvi = true;
+        }
+
+        public static void IskoristiKviskoDrugi()
+        {
+            neiskoristen_kvisko_drugi = false;
+            iskoristen_kvisko_drugi = true;
+        }
+
+        public static int Igra()
+        {
+            return faza;
+        }
+
+        public static void reset(Pocetna _pocetna)
+        {
+            pocetna = _pocetna;
             bodovi_igraca = 0;
             bodovi_prvog = 0;
             bodovi_drugog = 0;
