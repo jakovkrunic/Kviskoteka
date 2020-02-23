@@ -1,0 +1,55 @@
+﻿Kojem tipu funkcije nije nužno slika jednaka domeni?
+Injekcija
+Surjekcija
+Bijekcija
+a
+Najmanja algebarska struktura je:
+polugrupa
+grupoid
+monoid
+b
+Skup realnih brojeva je
+Konačan
+Prebrojiv
+Neprebrojiv
+c
+Koja operacija je nužno komutativna kod prstena?
+Zbrajanje
+Množenje
+Obje
+a
+Koji teorem je izuzetno bitan u vektorskoj analizi?
+Bolzano-Weierstrassov teorem
+Prvi teorem o izomorfizmu
+Stokesov teorem
+c
+Ako dva kuta u sumi daju pravi kut, oni su
+Komplementarni
+Suplementarni
+Sukladni
+a
+Ako dva kuta u sumi daju ispruženi kut, oni su
+Komplementarni
+Suplementarni
+Sukladni
+b
+Ako dva kuta imaju istu mjeru, oni su
+Komplementarni
+Suplementarni
+Sukladni
+c
+Važna mjera u statističkim testovima je
+a-vrijednost
+p-vrijednost
+ž-vrijednost
+b
+Kad će doći rezultati monetarne?
+Nikad
+Nikad * nikad
+Nikad ^ nikad
+c
+Apsolutna vrijednost NIJE:
+Funkcija
+Neprekidna
+Diferencijabilna
+c
