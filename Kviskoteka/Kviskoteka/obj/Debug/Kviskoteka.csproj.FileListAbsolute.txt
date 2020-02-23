@@ -31,3 +31,16 @@ C:\Users\Petra\source\repos\Kviskoteka\Kviskoteka\Kviskoteka\bin\Debug\potrebno\
 C:\Users\Petra\source\repos\Kviskoteka\Kviskoteka\Kviskoteka\bin\Debug\potrebno\zensko.jpg
 C:\Users\Petra\source\repos\Kviskoteka\Kviskoteka\Kviskoteka\bin\Debug\potrebno\zensko.png
 C:\Users\Petra\source\repos\Kviskoteka\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.DodajDetekciju.resources
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\bin\Debug\potrebno\detekcije.txt
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\bin\Debug\potrebno\musko.ico
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\bin\Debug\potrebno\musko.jpg
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\bin\Debug\potrebno\musko.png
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\bin\Debug\potrebno\zensko.jpg
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\bin\Debug\potrebno\zensko.png
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.ABC.resources
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.Detekcija.resources
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.DodajABC.resources
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.DodajDetekciju.resources
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.DodajAsocijaciju.resources
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.DodajZavrsnu.resources
+C:\Users\Jaki\Desktop\Kviskoteka-master\Kviskoteka\Kviskoteka\obj\Debug\Kviskoteka.SettingsForm.resources

@@ -47,7 +47,7 @@ namespace Kviskoteka
         }
         public String[] asocijacija()
         {
-            int lineCount = File.ReadLines(@"potrebno/asocijacije.txt").Count();
+            int lineCount = File.ReadLines(@"files/asocijacije.txt").Count();
             int broj_igri = lineCount / 21;
             Random rnd = new Random();
             int igra = rnd.Next(broj_igri);
@@ -58,7 +58,7 @@ namespace Kviskoteka
 
             string line;
 
-            TextReader file = new StreamReader(@"potrebno/asocijacije.txt", System.Text.Encoding.Default, true);
+            TextReader file = new StreamReader(@"files/asocijacije.txt", System.Text.Encoding.Default, true);
 
             while ((line = file.ReadLine()) != null)
             {

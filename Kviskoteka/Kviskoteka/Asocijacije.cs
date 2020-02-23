@@ -14,6 +14,9 @@ namespace Kviskoteka
     {
         private string[] celije = new string[16];
         String[] asocijacija = new FileManager().asocijacija();
+        int bodovi1 = 0;
+        int bodovi2 = 0;
+        int bodovi3 = 0;
         public Asocijacije()
         {
             InitializeComponent();
@@ -103,6 +106,7 @@ namespace Kviskoteka
                                 }
                             }
                             //dodaj igracu 15 bodova
+                            bodovi1 += 15;
                         }
                         else
                         {
@@ -142,6 +146,7 @@ namespace Kviskoteka
                                 {
                                     if (textbox.Name == "textBox" + j)
                                     {
+                                        textbox.Font = new Font(tb.Font, FontStyle.Bold);
                                         textbox.BackColor = Color.Aquamarine;
                                         textbox.Text = asocijacija[5 * j - 1];
                                         textbox.ReadOnly = true;
@@ -150,7 +155,10 @@ namespace Kviskoteka
                             }
                         }
                         //dodaj igracu 40 bodova
+                        bodovi1 += 40;
                         //kraj igre
+                        MessageBox.Show("Kraj igre asocijacija!");
+                        DetaljiIgre.DodajBodove(this, bodovi1, bodovi2, bodovi3);
                     }
                     else
                     {
@@ -174,7 +182,7 @@ namespace Kviskoteka
                     tbx.ReadOnly = true;
                 }
             }
-            int tezina = 1;
+            int tezina = DetaljiIgre.TezinaPrvog(1);
             await Task.Delay(1500);
             if (neotvorena_polja().Count > 0)
             {
@@ -204,7 +212,7 @@ namespace Kviskoteka
                     tbx.ReadOnly = true;
                 }
             }
-            int tezina = 1;
+            int tezina = DetaljiIgre.TezinaDrugog(1);
             await Task.Delay(1500);
             if (neotvorena_polja().Count > 0)
             {
@@ -283,9 +291,15 @@ namespace Kviskoteka
                     }
                 }
                 if (protivnik == 1)
-                    potez_protivnik1(); //i dodaj 15 bodova protivniku 1
+                {
+                    bodovi2 += 15;
+                    potez_protivnik1();
+                }
                 else
-                    potez_protivnik2(); //i dodaj 15 bodova protivniku 2
+                {
+                    bodovi3 += 15;
+                    potez_protivnik2();
+                }
             }
             else
             {
@@ -327,7 +341,14 @@ namespace Kviskoteka
                 textBox5.Font = new Font(textBox5.Font, FontStyle.Bold);
                 textBox5.BackColor = Color.Aquamarine;
                 textBox5.ReadOnly = true;
-                //kraj igre i dodaj 40 bodova protivniku s indeksom "protivnik"
+                //dodaj 40 bodova protivniku s indeksom "protivnik"
+                if (protivnik == 1)
+                    bodovi2 += 40;
+                else
+                    bodovi3 += 40;
+                //kraj igre
+                MessageBox.Show("Kraj igre asocijacija!");
+                DetaljiIgre.DodajBodove(this, bodovi1, bodovi2, bodovi3);
             }
             else
             {
@@ -435,6 +456,5 @@ namespace Kviskoteka
             if (s4 == max) s = 4;
             return s;
         }
-
     }
 }
