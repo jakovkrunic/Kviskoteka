@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.abc_radio = new System.Windows.Forms.RadioButton();
-            this.as_radio = new System.Windows.Forms.RadioButton();
-            this.det_radio = new System.Windows.Forms.RadioButton();
             this.zav_radio = new System.Windows.Forms.RadioButton();
+            this.det_radio = new System.Windows.Forms.RadioButton();
+            this.as_radio = new System.Windows.Forms.RadioButton();
+            this.abc_radio = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -55,27 +55,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Odabir igre";
             // 
-            // abc_radio
+            // zav_radio
             // 
-            this.abc_radio.AutoSize = true;
-            this.abc_radio.Location = new System.Drawing.Point(6, 20);
-            this.abc_radio.Name = "abc_radio";
-            this.abc_radio.Size = new System.Drawing.Size(102, 19);
-            this.abc_radio.TabIndex = 0;
-            this.abc_radio.TabStop = true;
-            this.abc_radio.Text = "ABC pitalica";
-            this.abc_radio.UseVisualStyleBackColor = true;
-            // 
-            // as_radio
-            // 
-            this.as_radio.AutoSize = true;
-            this.as_radio.Location = new System.Drawing.Point(6, 46);
-            this.as_radio.Name = "as_radio";
-            this.as_radio.Size = new System.Drawing.Size(123, 19);
-            this.as_radio.TabIndex = 1;
-            this.as_radio.TabStop = true;
-            this.as_radio.Text = "Igra asocijacija";
-            this.as_radio.UseVisualStyleBackColor = true;
+            this.zav_radio.AutoSize = true;
+            this.zav_radio.Location = new System.Drawing.Point(6, 96);
+            this.zav_radio.Name = "zav_radio";
+            this.zav_radio.Size = new System.Drawing.Size(104, 19);
+            this.zav_radio.TabIndex = 3;
+            this.zav_radio.TabStop = true;
+            this.zav_radio.Text = "Zavrsna igra";
+            this.zav_radio.UseVisualStyleBackColor = true;
             // 
             // det_radio
             // 
@@ -88,16 +77,27 @@
             this.det_radio.Text = "Igra detekcije";
             this.det_radio.UseVisualStyleBackColor = true;
             // 
-            // zav_radio
+            // as_radio
             // 
-            this.zav_radio.AutoSize = true;
-            this.zav_radio.Location = new System.Drawing.Point(6, 96);
-            this.zav_radio.Name = "zav_radio";
-            this.zav_radio.Size = new System.Drawing.Size(104, 19);
-            this.zav_radio.TabIndex = 3;
-            this.zav_radio.TabStop = true;
-            this.zav_radio.Text = "Zavrsna igra";
-            this.zav_radio.UseVisualStyleBackColor = true;
+            this.as_radio.AutoSize = true;
+            this.as_radio.Location = new System.Drawing.Point(6, 46);
+            this.as_radio.Name = "as_radio";
+            this.as_radio.Size = new System.Drawing.Size(123, 19);
+            this.as_radio.TabIndex = 1;
+            this.as_radio.TabStop = true;
+            this.as_radio.Text = "Igra asocijacija";
+            this.as_radio.UseVisualStyleBackColor = true;
+            // 
+            // abc_radio
+            // 
+            this.abc_radio.AutoSize = true;
+            this.abc_radio.Location = new System.Drawing.Point(6, 20);
+            this.abc_radio.Name = "abc_radio";
+            this.abc_radio.Size = new System.Drawing.Size(102, 19);
+            this.abc_radio.TabIndex = 0;
+            this.abc_radio.TabStop = true;
+            this.abc_radio.Text = "ABC pitalica";
+            this.abc_radio.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -127,6 +127,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Dodavanje";
             this.Text = "Dodavanje";
             this.groupBox1.ResumeLayout(false);

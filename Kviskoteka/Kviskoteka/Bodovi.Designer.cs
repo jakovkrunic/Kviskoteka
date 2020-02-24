@@ -145,6 +145,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bodovi_label);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Bodovi";
             this.Text = "Bodovi";
             this.ResumeLayout(false);

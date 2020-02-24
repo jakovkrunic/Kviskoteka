@@ -301,6 +301,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.zapocni);
             this.Controls.Add(this.naslov);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Detekcija";

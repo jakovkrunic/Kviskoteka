@@ -32,12 +32,12 @@
             this.pitanje_text = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.prvi_radio = new System.Windows.Forms.RadioButton();
-            this.prvi_text = new System.Windows.Forms.TextBox();
-            this.drugi_text = new System.Windows.Forms.TextBox();
-            this.drugi_radio = new System.Windows.Forms.RadioButton();
-            this.treci_radio = new System.Windows.Forms.RadioButton();
             this.treci_text = new System.Windows.Forms.TextBox();
+            this.treci_radio = new System.Windows.Forms.RadioButton();
+            this.drugi_radio = new System.Windows.Forms.RadioButton();
+            this.drugi_text = new System.Windows.Forms.TextBox();
+            this.prvi_text = new System.Windows.Forms.TextBox();
+            this.prvi_radio = new System.Windows.Forms.RadioButton();
             this.dodaj_btn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -88,39 +88,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Odgovori";
             // 
-            // prvi_radio
+            // treci_text
             // 
-            this.prvi_radio.AutoSize = true;
-            this.prvi_radio.Location = new System.Drawing.Point(6, 33);
-            this.prvi_radio.Name = "prvi_radio";
-            this.prvi_radio.Size = new System.Drawing.Size(14, 13);
-            this.prvi_radio.TabIndex = 0;
-            this.prvi_radio.TabStop = true;
-            this.prvi_radio.UseVisualStyleBackColor = true;
-            // 
-            // prvi_text
-            // 
-            this.prvi_text.Location = new System.Drawing.Point(26, 29);
-            this.prvi_text.Name = "prvi_text";
-            this.prvi_text.Size = new System.Drawing.Size(422, 21);
-            this.prvi_text.TabIndex = 1;
-            // 
-            // drugi_text
-            // 
-            this.drugi_text.Location = new System.Drawing.Point(26, 57);
-            this.drugi_text.Name = "drugi_text";
-            this.drugi_text.Size = new System.Drawing.Size(422, 21);
-            this.drugi_text.TabIndex = 2;
-            // 
-            // drugi_radio
-            // 
-            this.drugi_radio.AutoSize = true;
-            this.drugi_radio.Location = new System.Drawing.Point(6, 61);
-            this.drugi_radio.Name = "drugi_radio";
-            this.drugi_radio.Size = new System.Drawing.Size(14, 13);
-            this.drugi_radio.TabIndex = 3;
-            this.drugi_radio.TabStop = true;
-            this.drugi_radio.UseVisualStyleBackColor = true;
+            this.treci_text.Location = new System.Drawing.Point(27, 85);
+            this.treci_text.Name = "treci_text";
+            this.treci_text.Size = new System.Drawing.Size(421, 21);
+            this.treci_text.TabIndex = 5;
             // 
             // treci_radio
             // 
@@ -132,12 +105,39 @@
             this.treci_radio.TabStop = true;
             this.treci_radio.UseVisualStyleBackColor = true;
             // 
-            // treci_text
+            // drugi_radio
             // 
-            this.treci_text.Location = new System.Drawing.Point(27, 85);
-            this.treci_text.Name = "treci_text";
-            this.treci_text.Size = new System.Drawing.Size(421, 21);
-            this.treci_text.TabIndex = 5;
+            this.drugi_radio.AutoSize = true;
+            this.drugi_radio.Location = new System.Drawing.Point(6, 61);
+            this.drugi_radio.Name = "drugi_radio";
+            this.drugi_radio.Size = new System.Drawing.Size(14, 13);
+            this.drugi_radio.TabIndex = 3;
+            this.drugi_radio.TabStop = true;
+            this.drugi_radio.UseVisualStyleBackColor = true;
+            // 
+            // drugi_text
+            // 
+            this.drugi_text.Location = new System.Drawing.Point(26, 57);
+            this.drugi_text.Name = "drugi_text";
+            this.drugi_text.Size = new System.Drawing.Size(422, 21);
+            this.drugi_text.TabIndex = 2;
+            // 
+            // prvi_text
+            // 
+            this.prvi_text.Location = new System.Drawing.Point(26, 29);
+            this.prvi_text.Name = "prvi_text";
+            this.prvi_text.Size = new System.Drawing.Size(422, 21);
+            this.prvi_text.TabIndex = 1;
+            // 
+            // prvi_radio
+            // 
+            this.prvi_radio.AutoSize = true;
+            this.prvi_radio.Location = new System.Drawing.Point(6, 33);
+            this.prvi_radio.Name = "prvi_radio";
+            this.prvi_radio.Size = new System.Drawing.Size(14, 13);
+            this.prvi_radio.TabIndex = 0;
+            this.prvi_radio.TabStop = true;
+            this.prvi_radio.UseVisualStyleBackColor = true;
             // 
             // dodaj_btn
             // 
@@ -160,6 +160,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pitanje_text);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "DodajABC";
             this.Text = "DodajABC";
             this.groupBox1.ResumeLayout(false);

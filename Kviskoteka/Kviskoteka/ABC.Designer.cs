@@ -265,6 +265,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label_pitanje);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ABC";
             this.Text = "ABC";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ABC_FormClosing);

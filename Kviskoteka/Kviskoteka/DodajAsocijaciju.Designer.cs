@@ -236,6 +236,7 @@
             this.Controls.Add(this.textbox_as_1_3);
             this.Controls.Add(this.textbox_as_1_2);
             this.Controls.Add(this.textbox_as_1_1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "DodajAsocijaciju";
             this.Text = "Dodavanje asocijacije";
             this.ResumeLayout(false);
