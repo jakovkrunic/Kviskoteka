@@ -269,7 +269,7 @@ namespace Kviskoteka
                 {
                     int vjerojatnost = rand.Next(1, 101);
                     int kojiOdgovor = rand1.Next(1, 3);
-                    if (vjerojatnost >= 60)
+                    if (vjerojatnost >= 50)
                         odgovori[i] = pitanjaOdgovori[i].odgovori[0];
                     else
                         odgovori[i] = pitanjaOdgovori[i].odgovori[kojiOdgovor];

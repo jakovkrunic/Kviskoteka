@@ -40,3 +40,45 @@ Buduæi da svirate Taylor gitare, gdje se nalazi sjedište tog proizvoðaèa?
 California
 Colorado
 Washington
+Marin Gunja
+Ja sam Marin Gunja, izrazito odlièan student PMF-a.
+Koja je Vaša najdraža životinja?
+Morž
+Krava
+Meduza
+Koja je Vaša najdraža boja?
+Crna, ali to nije boja.
+Plava
+Smeða
+Iz kojeg ste kolegija osvojili znaèku najboljeg studenta?
+Matematièki softver
+Interpretacija programa
+USPP
+Koje je originalno ime grupnog razgovora Vašeg raèunarskog tima?
+Robot kaj hoda
+Morž kaj hoda
+Morž raèunarci
+Navedite jedan od Vaših glavnih ciljeva u životu...
+Poboljšati Shell Sort i omoguæiti mu da postane najbolji algoritam za sortiranje.
+Zaraditi dovoljno novaca i donirati ih za zaštitu mojih najdražih životinja.
+Isklesati si kuæu u kamenu.
+Da niste matematièar, što biste radili u životu?
+Pisali Haiku pjesmice.
+Putovao bih svijetom.
+Streamao bih igrice.
+Koje je radno vrijeme referade za studente na PMF-u?
+11-13
+12-14
+8-15
+Iz kojeg ste kolegija ovaj semestar bili demonstrator?
+Matematièka logika
+Uvod u optimizaciju
+Oblikovanje i analiza algoritama
+Koliko ste kolegija polagali, a da im je profesor Èaèiæ bio nositelj?
+5
+3
+4
+Koliko je obaveznih kolegija na zadnjoj godini studiranja?
+6
+10
+8
