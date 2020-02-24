@@ -13,7 +13,7 @@ namespace Kviskoteka
 {
     public partial class Zavrsna : Form
     {
-        public Label kaj_se_dogada;
+        public Label kaj_se_dogada, timer_label;
         public Button taster, next_q;
         public TextBox unesi_odg;
         public Label ind_tast1, ind_tast2, ind_tast3;
@@ -73,7 +73,14 @@ namespace Kviskoteka
             kaj_se_dogada.Location = new Point((ClientRectangle.Width - kaj_se_dogada.Width) / 2, 0);
             kaj_se_dogada.Text = "ZAVRŠNA IGRA";
             kaj_se_dogada.TextAlign = ContentAlignment.MiddleCenter;
+            kaj_se_dogada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Controls.Add(kaj_se_dogada);
+
+            timer_label = new Label();
+            timer_label.Size = new Size(80, 80);
+            timer_label.Location = new Point((ClientRectangle.Width) / 2, 100);
+            timer_label.Text = "";
+            this.Controls.Add(timer_label);
 
             taster = new Button();
             taster.Text = "Prijavi se!";
@@ -181,7 +188,8 @@ namespace Kviskoteka
             {
                 e.SuppressKeyPress = true;
                 e.Handled = true;
-                if (unesi_odg.Text == tocni_odg[curr_q])
+                if (String.Equals(unesi_odg.Text, tocni_odg[curr_q],
+                   StringComparison.OrdinalIgnoreCase) )
                 {
                     kaj_se_dogada.Text = "Igrač pogađa: " + tocni_odg[curr_q] + "\n Točno!";
                     bodovi += 10;
@@ -204,6 +212,7 @@ namespace Kviskoteka
             //kaj_se_dogada.Text = timer_counter.ToString();
             // ^^ to na poseban lejbl
             timer_counter -= 0.5;
+            timer_label.Text = timer_counter.ToString();
             if ((na_redu + 1).ToString() == ind_tast1.Text)
             {
                 unesi_odg.Enabled = true;
@@ -247,21 +256,23 @@ namespace Kviskoteka
                 }
                 ++na_redu;
             }
-            if (timer_counter < pozovi_taster2 && ind_tast2.BackColor != Color.ForestGreen)
+            if (timer_counter <= pozovi_taster2 && ind_tast2.BackColor != Color.ForestGreen)
             {
                 ind_tast2.BackColor = Color.ForestGreen;
                 list.Add(2);
                 ind_tast2.Text = (list.IndexOf(2) + 1).ToString();
             }
-            else if (timer_counter < pozovi_taster3 && ind_tast3.BackColor != Color.ForestGreen)
+            else if (timer_counter <= pozovi_taster3 && ind_tast3.BackColor != Color.ForestGreen)
             {
                 ind_tast3.BackColor = Color.ForestGreen;
                 ind_tast3.Text = 1.ToString();
                 list.Add(3);
                 ind_tast3.Text = (list.IndexOf(3) + 1).ToString();
             }
-            else if (timer_counter < 0 || na_redu == 4)
+            else if (timer_counter <= 0 || na_redu == 3)
             {
+                this.Refresh();
+                Thread.Sleep(1000);
                 kraj_pitanja();
             }
         }
@@ -269,14 +280,16 @@ namespace Kviskoteka
         void kraj_pitanja()
         {
             timer1.Stop();
+            timer_label.Text = "";
             // poslozi batone, curr_q. tak nekaj
             ++curr_q;
             kaj_se_dogada.Text = "Gotovo pitanje, još " + (pitanja.Count() - curr_q).ToString() + " pitanja!";
             taster.Enabled = false;
+            unesi_odg.Text = "";
             unesi_odg.Enabled = false;
             if (curr_q >= pitanja.Count())
             {
-                kaj_se_dogada.Text = "IGRA JE GOTOVA MARŠ DOMA!";
+                kaj_se_dogada.Text = "Kraj igre!";
                 next_q.Enabled = false;
                 DetaljiIgre.DodajBodove(this, bodovi, bodovi_2, bodovi_3);
             }

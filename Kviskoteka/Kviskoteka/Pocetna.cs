@@ -19,7 +19,12 @@ namespace Kviskoteka
             InitializeComponent();
             DetaljiIgre.reset(this);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.Image = new Bitmap(@"potrebno/morzek.png");
+            //pictureBox1.Image = new Bitmap(@"potrebno/morzek.png");
+            var file = @"potrebno/morzek.png";
+            using (var s = new System.IO.FileStream(file, System.IO.FileMode.Open))
+            {
+                pictureBox1.Image = Image.FromStream(s);
+            }
             this.StartPosition = FormStartPosition.Manual;
             this.Left = 200;
             this.Top = 80;

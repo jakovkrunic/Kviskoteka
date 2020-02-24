@@ -143,7 +143,12 @@ namespace Kviskoteka
             pictureBox1.Location = new Point(620, this.Bottom - 450);
             pictureBox1.BackColor = Color.Aqua;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.Image = new Bitmap(@"potrebno/musko.png");
+            //pictureBox1.Image = new Bitmap(@"potrebno/musko.png");
+            var file = @"potrebno/musko.png";
+            using (var s = new System.IO.FileStream(file, System.IO.FileMode.Open))
+            {
+                pictureBox1.Image = Image.FromStream(s);
+            }
             osoba1.Location = new Point(620, this.Bottom - 245);
             osoba1.Enabled = false;
             osoba1.Width = 120;
@@ -154,7 +159,11 @@ namespace Kviskoteka
             pictureBox2.Location = new Point(760, this.Bottom - 450);
             pictureBox2.BackColor = Color.Aqua;
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.Image = new Bitmap(@"potrebno/musko.png");
+            //pictureBox2.Image = new Bitmap(@"potrebno/musko.png");
+            using (var s = new System.IO.FileStream(file, System.IO.FileMode.Open))
+            {
+                pictureBox2.Image = Image.FromStream(s);
+            }
             osoba2.Location = new Point(760, this.Bottom - 245);
             osoba2.Width = 120;
             osoba2.Enabled = false;

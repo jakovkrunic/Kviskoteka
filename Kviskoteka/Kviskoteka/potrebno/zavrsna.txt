@@ -8,11 +8,11 @@ Koje godine je počeo 2. svjetski rat?
 1945
 1970
 1999
-Ovaj kviz je pisan u kojem jeziku?
-C#
-C++
-D
-Python
+Ako promatramo broj osvojenih odličja za hrabrost, koja životinja je najhrabrija?
+Golub
+Lav
+Pas
+Konj
 Kakvu vrstu graha Hannibal Lecter voli jesti uz chianti?
 Fava
 Crveni
