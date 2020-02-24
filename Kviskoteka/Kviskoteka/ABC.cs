@@ -172,8 +172,6 @@ namespace Kviskoteka
         private void ABC_FormClosing(object sender, FormClosingEventArgs e)
         {
             timer.Stop();
-            DetaljiIgre.pocetna.Show();
-            DetaljiIgre.reset(DetaljiIgre.pocetna);
         }
     }
 }

@@ -468,8 +468,7 @@ namespace Kviskoteka
 
         private void Asocijacije_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DetaljiIgre.pocetna.Show();
-            DetaljiIgre.reset(DetaljiIgre.pocetna);
+            
         }
     }
 }

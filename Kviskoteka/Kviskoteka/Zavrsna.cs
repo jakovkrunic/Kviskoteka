@@ -136,8 +136,6 @@ namespace Kviskoteka
         private void Zavrsna_FormClosing(object sender, FormClosingEventArgs e)
         {
             timer1.Stop();
-            DetaljiIgre.pocetna.Show();
-            DetaljiIgre.reset(DetaljiIgre.pocetna);
         }
 
         void postavi_pitanje(Object sender, EventArgs e)

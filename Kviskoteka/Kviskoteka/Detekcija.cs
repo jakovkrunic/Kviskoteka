@@ -643,8 +643,6 @@ namespace Kviskoteka
         private void Detekcija_FormClosing(object sender, FormClosingEventArgs e)
         {
             timer1.Stop();
-            DetaljiIgre.pocetna.Show();
-            DetaljiIgre.reset(DetaljiIgre.pocetna);
         }
 
         private void osoba3_Click(object sender, EventArgs e)

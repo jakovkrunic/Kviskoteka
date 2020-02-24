@@ -54,12 +54,12 @@ Iz kojeg ste kolegija osvojili znaèku najboljeg studenta?
 Matematièki softver
 Interpretacija programa
 USPP
-Koje je originalno ime grupnog razgovora Vašer raèunarskog tima?
+Koje je originalno ime grupnog razgovora Vašeg raèunarskog tima?
 Robot kaj hoda
 Morž kaj hoda
 Morž raèunarci
-Navedite jedan od Vaših glavnijih ciljeva u životu...
-Poboljšati Shell Sort i omoguæiti mu da postane najblji algoritam za sortiranje.
+Navedite jedan od Vaših glavnih ciljeva u životu...
+Poboljšati Shell Sort i omoguæiti mu da postane najbolji algoritam za sortiranje.
 Zaraditi dovoljno novaca i donirati ih za zaštitu mojih najdražih životinja.
 Isklesati si kuæu u kamenu.
 Da niste matematièar, što biste radili u životu?
