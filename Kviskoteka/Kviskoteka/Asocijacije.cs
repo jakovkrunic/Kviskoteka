@@ -465,5 +465,11 @@ namespace Kviskoteka
             if (s4 == max) s = 4;
             return s;
         }
+
+        private void Asocijacije_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DetaljiIgre.pocetna.Show();
+            DetaljiIgre.reset(DetaljiIgre.pocetna);
+        }
     }
 }

@@ -311,6 +311,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Asocijacije";
             this.Text = "Asocijacije";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Asocijacije_FormClosing);
             this.Click += new System.EventHandler(this.label_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
