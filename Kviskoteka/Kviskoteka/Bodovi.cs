@@ -42,8 +42,8 @@ namespace Kviskoteka
             {
                 case 1: { new Asocijacije().Show(); this.Close();  break; }
                 case 2: { new Detekcija().Show(); this.Close(); break; }
-                //case 3: new Zavrsna().Show(); break;
-                case 3: // Promijeni u case 4 i odkomentiraj ono gore!
+                case 3: new Zavrsna().Show(); break;
+                case 4: // Promijeni u case 4 i odkomentiraj ono gore!
                     {
                         this.Close();
                         DetaljiIgre.pocetna.Visible = true;

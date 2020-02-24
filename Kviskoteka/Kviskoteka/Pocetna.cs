@@ -100,7 +100,7 @@ namespace Kviskoteka
         private void kreni_btn_Click(object sender, EventArgs e)
         {
             new ABC().Show();
-
+            //new Zavrsna().Show();
             this.Hide();
         }
     }

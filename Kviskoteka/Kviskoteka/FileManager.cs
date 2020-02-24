@@ -96,7 +96,7 @@ namespace Kviskoteka
 
         public String[] zavrsna()
         {
-            int lineCount = File.ReadLines(@"potrebno/zavrsna.txt").Count();
+            int lineCount = File.ReadLines(@"..\..\potrebno/zavrsna.txt").Count();
             int broj_pitanja = lineCount / 5;
             Random rnd = new Random();
             List<int> iskoristeno = new List<int>();
@@ -117,12 +117,12 @@ namespace Kviskoteka
 
                 string line;
 
-                TextReader file = new StreamReader(@"potrebno/zavrsna.txt", System.Text.Encoding.Default, true);
+                TextReader file = new StreamReader(@"..\..\potrebno/zavrsna.txt", System.Text.Encoding.Default, true);
 
                 while ((line = file.ReadLine()) != null && interni < 5)
                 {
                     if (brojac < pitanje * 5) { ++brojac; continue; }
-                    if (interni < 5) { izlaz[5 * i + interni] = line; ++interni; }
+                    else if (interni < 5) { izlaz[5 * i + interni] = line; ++interni; }
                 }
 
             }
