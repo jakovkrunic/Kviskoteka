@@ -20,6 +20,9 @@ namespace Kviskoteka
         public Asocijacije()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Left = 200;
+            this.Top = 80;
             for (var i = 0; i < 16; i++)
             {
                 if (i < 4)

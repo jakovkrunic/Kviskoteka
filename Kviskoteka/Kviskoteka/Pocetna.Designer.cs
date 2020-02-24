@@ -32,22 +32,29 @@
             this.kreni_btn = new System.Windows.Forms.Button();
             this.postavke_btn = new System.Windows.Forms.Button();
             this.dodaj_btn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label1.Location = new System.Drawing.Point(252, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 13);
+            this.label1.Size = new System.Drawing.Size(535, 36);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Dobrodosli na kvizanje s Morzevima!";
+            this.label1.Text = "Dobrodošli na kvizanje s Morževima!";
             // 
             // kreni_btn
             // 
-            this.kreni_btn.Location = new System.Drawing.Point(16, 43);
+            this.kreni_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.kreni_btn.Location = new System.Drawing.Point(159, 95);
+            this.kreni_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kreni_btn.Name = "kreni_btn";
-            this.kreni_btn.Size = new System.Drawing.Size(75, 23);
+            this.kreni_btn.Size = new System.Drawing.Size(150, 75);
             this.kreni_btn.TabIndex = 1;
             this.kreni_btn.Text = "Kreni!";
             this.kreni_btn.UseVisualStyleBackColor = true;
@@ -55,9 +62,11 @@
             // 
             // postavke_btn
             // 
-            this.postavke_btn.Location = new System.Drawing.Point(130, 43);
+            this.postavke_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.postavke_btn.Location = new System.Drawing.Point(434, 95);
+            this.postavke_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.postavke_btn.Name = "postavke_btn";
-            this.postavke_btn.Size = new System.Drawing.Size(75, 23);
+            this.postavke_btn.Size = new System.Drawing.Size(150, 75);
             this.postavke_btn.TabIndex = 2;
             this.postavke_btn.Text = "Postavke";
             this.postavke_btn.UseVisualStyleBackColor = true;
@@ -65,26 +74,39 @@
             // 
             // dodaj_btn
             // 
-            this.dodaj_btn.Location = new System.Drawing.Point(235, 43);
+            this.dodaj_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dodaj_btn.Location = new System.Drawing.Point(716, 95);
+            this.dodaj_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dodaj_btn.Name = "dodaj_btn";
-            this.dodaj_btn.Size = new System.Drawing.Size(89, 23);
+            this.dodaj_btn.Size = new System.Drawing.Size(150, 75);
             this.dodaj_btn.TabIndex = 3;
             this.dodaj_btn.Text = "Dodaj pitanja";
             this.dodaj_btn.UseVisualStyleBackColor = true;
             this.dodaj_btn.Click += new System.EventHandler(this.dodaj_btn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(307, 223);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(410, 300);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // Pocetna
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dodaj_btn);
             this.Controls.Add(this.postavke_btn);
             this.Controls.Add(this.kreni_btn);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Pocetna";
             this.Text = "Pocetni";
             this.Load += new System.EventHandler(this.Pocetna_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,6 +118,7 @@
         private System.Windows.Forms.Button kreni_btn;
         private System.Windows.Forms.Button postavke_btn;
         private System.Windows.Forms.Button dodaj_btn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

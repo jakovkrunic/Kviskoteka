@@ -14,7 +14,10 @@ namespace Kviskoteka
     {
         public DodajAsocijaciju()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            this.StartPosition = FormStartPosition.Manual;
+            this.Left = 200;
+            this.Top = 80;
         }
 
         private void btn_as_Click(object sender, EventArgs e)

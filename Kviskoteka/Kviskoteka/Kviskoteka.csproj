@@ -189,6 +189,9 @@
     <Content Include="potrebno\detekcije.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="potrebno\morzek.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="potrebno\musko.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

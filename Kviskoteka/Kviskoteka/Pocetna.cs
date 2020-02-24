@@ -18,6 +18,11 @@ namespace Kviskoteka
         {
             InitializeComponent();
             DetaljiIgre.reset(this);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.Image = new Bitmap(@"potrebno/morzek.png");
+            this.StartPosition = FormStartPosition.Manual;
+            this.Left = 200;
+            this.Top = 80;
         }
 
         private void Pocetna_Load(object sender, EventArgs e)

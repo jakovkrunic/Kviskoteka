@@ -16,7 +16,7 @@ namespace Kviskoteka
         string[] detekcija = new FileManager().detekcija();
         private string ime;
         int bodovi1 = -1, bodovi2 = -1, bodoviKorisnik = 0;
-        int razina1 = 1, razina2 = 2;
+        int razina1, razina2;
         int trenutniIgrac = 1;
         string pocetnaRecenica;
         int odabirRjesenja = 0;
@@ -53,8 +53,8 @@ namespace Kviskoteka
         {
             InitializeComponent();
 
-            //razina1 = DetaljiIgre.TezinaPrvog(2);
-            //razina2 = DetaljiIgre.TezinaDrugog(2);
+            razina1 = DetaljiIgre.TezinaPrvog(2);
+            razina2 = DetaljiIgre.TezinaDrugog(2);
             
             poredakIgraca = numbers.OrderBy(x => rnd.Next()).ToArray();
 
@@ -571,6 +571,9 @@ namespace Kviskoteka
                 if (bodovi2 == 50) izlaz += "Igrač 2 je također pogodio osobu i osvojio 50 bodova. ";
                 else izlaz += "Igrač 2 nije pogodio osobu pa nije osvojio bodove.";
 
+                if (DetaljiIgre.IskoristenKviskoIgrac()) bodoviKorisnik *= 2;
+                if (DetaljiIgre.IskoristenKviskoPrvi()) bodovi1 *= 2;
+                if (DetaljiIgre.IskoristenKviskoDrugi()) bodovi2 *= 2;
                 DetaljiIgre.DodajBodove(this, bodoviKorisnik, bodovi1, bodovi2);
 
                 MessageBox.Show(izlaz);
@@ -607,7 +610,12 @@ namespace Kviskoteka
                 else izlaz += "Igrač 1 nije pogodio osobu pa nije osvojio bodove. ";
                 if (bodovi2 == 50) izlaz += "Igrač 2 je također pogodio osobu i osvojio 50 bodova. ";
                 else izlaz += "Igrač 2 nije pogodio osobu pa nije osvojio bodove.";
+
+                if (DetaljiIgre.IskoristenKviskoIgrac()) bodoviKorisnik *= 2;
+                if (DetaljiIgre.IskoristenKviskoPrvi()) bodovi1 *= 2;
+                if (DetaljiIgre.IskoristenKviskoDrugi()) bodovi2 *= 2;
                 DetaljiIgre.DodajBodove(this, bodoviKorisnik, bodovi1, bodovi2);
+
                 MessageBox.Show(izlaz);
             }
         }
@@ -659,7 +667,12 @@ namespace Kviskoteka
                 else izlaz += "Igrač 1 nije pogodio osobu pa nije osvojio bodove. ";
                 if (bodovi2 == 50) izlaz += "Igrač 2 je također pogodio osobu i osvojio 50 bodova. ";
                 else izlaz += "Igrač 2 nije pogodio osobu pa nije osvojio bodove. ";
+
+                if (DetaljiIgre.IskoristenKviskoIgrac()) bodoviKorisnik *= 2;
+                if (DetaljiIgre.IskoristenKviskoPrvi()) bodovi1 *= 2;
+                if (DetaljiIgre.IskoristenKviskoDrugi()) bodovi2 *= 2;
                 DetaljiIgre.DodajBodove(this, bodoviKorisnik, bodovi1, bodovi2);
+
                 MessageBox.Show(izlaz);
             }
         }

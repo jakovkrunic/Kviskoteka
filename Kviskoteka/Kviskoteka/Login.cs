@@ -15,6 +15,9 @@ namespace Kviskoteka
         public Login()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Left = 200;
+            this.Top = 80;
         }
     }
 }

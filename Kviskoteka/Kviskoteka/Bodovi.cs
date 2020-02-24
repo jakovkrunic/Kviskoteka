@@ -15,6 +15,9 @@ namespace Kviskoteka
         public Bodovi(bool kvisko)
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Left = 150;
+            this.Top = 60;
 
             bodovi_label.Text = DetaljiIgre.BodoviIgraca().ToString();
             bodovi1_label.Text = DetaljiIgre.BodoviPrvog().ToString();

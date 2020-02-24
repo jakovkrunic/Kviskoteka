@@ -125,6 +125,9 @@ namespace Kviskoteka
             timer1.Interval = 500;
 
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Left = 200;
+            this.Top = 80;
 
         }
 

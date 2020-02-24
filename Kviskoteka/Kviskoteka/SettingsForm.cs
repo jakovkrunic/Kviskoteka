@@ -24,6 +24,9 @@ namespace Kviskoteka
             drugi_as.Value = DetaljiIgre.TezinaDrugog(1);
             drugi_det.Value = DetaljiIgre.TezinaDrugog(2);
             drugi_zav.Value = DetaljiIgre.TezinaDrugog(3);
+            this.StartPosition = FormStartPosition.Manual;
+            this.Left = 200;
+            this.Top = 80;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

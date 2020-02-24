@@ -15,6 +15,9 @@ namespace Kviskoteka
         public DodajZavrsnu()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Left = 200;
+            this.Top = 80;
         }
 
         private void dodaj_btn_Click(object sender, EventArgs e)

@@ -33,6 +33,9 @@ namespace Kviskoteka
         public ABC()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Left = 200;
+            this.Top = 80;
 
             progressBar1.Maximum = 4;
             progressBar1.Value = 0;
